@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .card { 
+            @apply bg-white rounded overflow-hidden shadow-md relative hover:shadow-2xl;
+          }
+        }
+      </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#FF6363',
+                secondary: {
+                    100: '#E2E2D5',
+                    200: '8888883',
+                }
+              },
+              fontFamily: {
+                  poppins: ['Poppins']
+              }
+            }
+          }
+        }
+      </script>
+    <title>Hotel Sand City</title>
+</head>
+<body class="font-poppins">
+    <div class="relative"><!-- content-wrapper-->
+        <div class="fixed top-0 left-0 right-0 z-50"><!-- nav_bar-->
+            <div class="flex justify-between items-center pt-1 px-4 bg-white bg-opacity-80">
+                <img src="./images/logo.svg" alt="logo" class="w-16 h-16">
+                <div>
+                    Book Now<span class="ml-2 pl-2 border-l-4 border-stone-600">+88-01234567890</span>
+                </div>
+            </div>
+            <div>
+                <nav class="bg-gradient-to-r from-white to-stone-300 text-black md:grid md:justify-items-end md:pr-56">
+                    <ul class="w-2/3 flex justify-evenly">
+                        <li class="md:border-r md:border-stone-50 md:pr-12"><a href="#">Home</a></li>
+
+                        <li class="md:border-r md:border-stone-50 md:pr-12"><a href="#about">About</a></li>
+
+                        <li class="md:border-r md:border-stone-50 md:pr-12"><a href="#rooms">Rooms</a></li>
+
+                        <li class="md:border-r md:border-stone-50 md:pr-12"><a href="#services">Services</a></li>
+
+                        <li class="md:border-r md:border-stone-50 md:pr-12"><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>   
+            </div>
+        </div>
+        <main class="mt-24 bg-gradient-to-r from-stone-100 to-white">
+            <div class="mx-4">
+                <header class="relative">
+                    <div>
+                        <img src="./images/background.jpg" alt="background">
+                    </div>
+                    <h1 class="absolute top-20 w-full text-center text-5xl font-semibold text-white backdrop-blur-sm md:text-7xl">Hotel Sand City</h1>
+                    <h2 class="absolute bottom-20 w-full text-center text-2xl text-black backdrop-blur-sm md:text-4xl md:bottom-60">Grandeur stay near the beach</h2>
+                </header>
+
+                <div class="md:mx-20">
+
+                    <div id="about" class="md:mx-"><!-- about-->
+                        <h3 class="font-bold mt-12 pb-2 border-b border-stone-400">Welcome to Hotel Sand City</h3>
+                        <p class="my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe maiores corporis animi sunt soluta culpa sapiente delectus excepturi laudantium harum perferendis quibusdam nihil similique eaque, minima voluptatem repudiandae odio omnis.
+                        </p>
+                    </div>
+
+                    <div id="rooms"><!-- rooms-->
+                        <h3 class="font-bold mt-12 pb-2 border-b border-stone-400 relative text-white">Spectacular<span class="absolute top-1.5 left-10 text-black">Rooms</span></h3>
+
+                        <div class="mt-8 grid lg:grid-cols-2 gap-10"><!-- cards-->
+                            <div class="card">
+                                <img src="./images/bed_1.jpg" alt="bed_1" class="w-full h-48 sm:h-96 object-cover">
+                                <div class="m-4">
+                                    <span class="font-bold">Premium Suite</span>
+                                    <span class="block text-stone-500 text-sm">1200Sft.</span>
+                                </div>
+                                <!-- <div class="w-132 h-80 center border-2 outline-black absolute inset-x-2 top-2 hover:inset-x-1.5 hover:top-1.5"></div> -->
+                            </div>
+                            <div class="card">
+                                <img src="./images/bed_2.jpg" alt="bed_2" class="w-full h-48 sm:h-96 object-cover">
+                                <div class="m-4">
+                                    <span class="font-bold">Super Deluxe Suite</span>
+                                    <span class="block text-stone-500 text-sm">1000Sft.</span>
+                                </div>
+                                <!-- <div class="w-132 h-44 center border-2 outline-black absolute inset-x-2 top-2 hover:inset-x-1.5 hover:top-1.5"></div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="services"><!-- Services-->
+                        <h3 class="font-bold mt-12 pb-2 border-b border-stone-400">Grandeur<span>Services</span></h3>
+                        <div class="my-4">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate expedita quis tenetur possimus iusto harum totam nostrum natus ad error, dolores eos! Eveniet neque et alias, deleniti sequi iste modi.
+                        </div>
+                        <div class="mt-8 grid lg:grid-cols-3 gap-10"><!-- cards-->
+                            <div class="card">
+                                <img src="./images/restuarant.jpg" alt="restuarant" class="w-full h-48 sm:h-56 object-cover">
+                                <div class="m-4">
+                                    <span class="font-bold">Restuarant</span>
+                                    <span class="block text-stone-500 text-sm">floor no</span>
+                                </div>
+                                <!-- <div class="w-132 h-44 center border-2 outline-black absolute inset-x-2 top-2 hover:inset-x-1.5 hover:top-1.5"></div> -->
+                            </div>
+
+                            <div class="card">
+                                <img src="./images/kids_zone.jpg" alt="kids_zone" class="w-full h-48 sm:h-56 object-cover">
+                                <div class="m-4">
+                                    <span class="font-bold">Kids Zone</span>
+                                    <span class="block text-stone-500 text-sm">floor no</span>
+                                </div>
+                                <!-- <div class="w-132 h-44 center border-2 outline-black absolute inset-x-2 top-2 hover:inset-x-1.5 hover:top-1.5"></div> -->
+                            </div>
+
+                            <div class="card">
+                                <img src="./images/conference_room.jpg" alt="conference_room" class="w-full h-48 sm:h-56 object-cover">
+                                <div class="m-4">
+                                    <span class="font-bold">Conference Room</span>
+                                    <span class="block text-stone-500 text-sm">floor no</span>
+                                </div>
+                                <!-- <div class="w-132 h-54 center border-2 outline-black absolute inset-x-2 top-2 hover:inset-x-1.5 hover:top-1.5"></div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="contacts"><!-- Contacts-->
+                        <h3 class="font-bold mt-12 pb-2 border-b border-stone-400">Contacts</span></h3>
+                        <div class="my-4">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate expedita quis tenetur possimus iusto harum totam nostrum natus ad error, dolores eos! Eveniet neque et alias, deleniti sequi iste modi.
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            
+            <footer class="bg-black md:p-4">
+                <div class="px-4 py-6 text-white text-center md:px-24 md:grid md:grid-cols-2 md:gap-10 ">
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint magnam voluptates quod, at asperiores ipsum?
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint magnam voluptates quod, at asperiores ipsum?
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+</body>
