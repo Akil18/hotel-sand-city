@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <style type="text/tailwindcss">
         @layer utilities {
           .card { 
@@ -79,28 +81,84 @@
                     <div id="rooms"><!-- rooms-->
                         <h3 class="font-bold mt-12 pb-2 border-b border-stone-400 relative text-white">Spectacular<span class="absolute top-1.5 left-10 text-black">Rooms</span></h3>
 
-                        <div class="mt-8 grid lg:grid-cols-2 gap-10"><!-- cards-->
+                        <div class="hidden mt-8 grid lg:grid-cols-2 gap-10"><!-- cards-->
+                            
                             <div class="card">
                                 <img src="./images/bed_1.jpg" alt="bed_1" class="w-full h-48 sm:h-96 object-cover">
                                 <div class="m-4">
                                     <span class="font-bold">Premium Suite</span>
                                     <span class="block text-stone-500 text-sm">1200Sft.</span>
                                 </div>
-                                <!-- <div class="w-132 h-80 center border-2 outline-black absolute inset-x-2 top-2 hover:inset-x-1.5 hover:top-1.5"></div> -->
                             </div>
+
                             <div class="card">
                                 <img src="./images/bed_2.jpg" alt="bed_2" class="w-full h-48 sm:h-96 object-cover">
                                 <div class="m-4">
                                     <span class="font-bold">Super Deluxe Suite</span>
                                     <span class="block text-stone-500 text-sm">1000Sft.</span>
                                 </div>
-                                <!-- <div class="w-132 h-44 center border-2 outline-black absolute inset-x-2 top-2 hover:inset-x-1.5 hover:top-1.5"></div> -->
                             </div>
+
+                            <div class="card">
+                                <img src="./images/bed_3.jpg" alt="bed_3" class="w-full h-48 sm:h-96 object-cover">
+                                <div class="m-4">
+                                    <span class="font-bold">Super Deluxe Suite</span>
+                                    <span class="block text-stone-500 text-sm">1000Sft.</span>
+                                </div>
+                            </div>
+
                         </div>
+                        
+                        
                     </div>
 
+                    <div class="swiper h-96">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="card m-12">
+                                    <img src="./images/bed_1.jpg" alt="bed_1" class="w-full h-48 sm:h-96 object-cover">
+                                    <div class="m-4">
+                                        <span class="font-bold">Premium Suite</span>
+                                        <span class="block text-stone-500 text-sm">1200Sft.</span>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                          <div class="swiper-slide">
+                            <div class="card m-12">
+                                <img src="./images/bed_2.jpg" alt="bed_2" class="w-full h-48 sm:h-96 object-cover">
+                                <div class="m-4">
+                                    <span class="font-bold">Super Deluxe Suite</span>
+                                    <span class="block text-stone-500 text-sm">1000Sft.</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="card m-12">
+                                <img src="./images/bed_3.jpg" alt="bed_3" class="w-full h-48 sm:h-96 object-cover">
+                                <div class="m-4">
+                                    <span class="font-bold">Super Deluxe Suite</span>
+                                    <span class="block text-stone-500 text-sm">1000Sft.</span>
+                                </div>
+                            </div>
+                          </div>
+                          ...
+                        </div>
+                        <!-- If we need pagination -->
+                        <!-- <div class="swiper-pagination"></div> -->
+                      
+                        <!-- If we need navigation buttons -->
+                        <!-- <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div> -->
+                      
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                      </div>
+
                     <div id="services"><!-- Services-->
-                        <h3 class="font-bold mt-12 pb-2 border-b border-stone-400">Grandeur<span>Services</span></h3>
+                        <h3 class="font-bold mt-4 pb-2 border-b border-stone-400">Grandeur<span>Services</span></h3>
                         <div class="my-4">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate expedita quis tenetur possimus iusto harum totam nostrum natus ad error, dolores eos! Eveniet neque et alias, deleniti sequi iste modi.
                         </div>
@@ -153,7 +211,9 @@
                     </div>
                 </div>
             </footer>
-
         </main>
     </div>
+
+    <script src="index.js"></script>
+
 </body>
