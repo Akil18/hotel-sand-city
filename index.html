@@ -27,7 +27,10 @@
                 }
               },
               fontFamily: {
-                  poppins: ['Poppins']
+                  poppins: ['Poppins'],
+              },
+              margin: {
+                  mammoth: '108px'
               }
             }
           }
@@ -67,7 +70,7 @@
                         <img src="./images/background.jpg" alt="background">
                     </div>
                     <h1 class="absolute top-20 w-full text-center text-3xl font-semibold text-white backdrop-blur-sm md:text-7xl">Hotel Sand City</h1>
-                    <h2 class="absolute bottom-20 w-full text-center text-xl text-black backdrop-blur-sm md:text-4xl md:bottom-60">Grandeur stay near the beach</h2>
+                    <h2 class="absolute bottom-20 w-full text-center text-xl text-black backdrop-blur-sm md:text-4xl md:bottom-30">Grandeur stay near the beach</h2>
                 </header>
 
                 <div class="md:mx-20">
@@ -79,9 +82,9 @@
                     </div>
 
                     <div id="rooms"><!-- rooms-->
-                        <h3 class="font-bold mt-12 pb-2 border-b border-stone-400 relative text-white">Spectacular<span class="absolute top-1.5 left-10 text-black">Rooms</span></h3>
+                        <h3 class="font-bold mt-12 pb-2 border-b border-stone-400 relative text-white"><span class="text-2xl">Spectacular</span><span class="absolute top-3 left-8 text-black">Rooms</span></h3>
 
-                        <div class="hidden mt-8 grid lg:grid-cols-2 gap-10"><!-- cards-->
+                        <div class="mt-8 lg:hidden grid lg:grid-cols-2 gap-10"><!-- cards-->
                             
                             <div class="card">
                                 <img src="./images/bed_1.jpg" alt="bed_1" class="w-full h-48 sm:h-96 object-cover">
@@ -108,16 +111,11 @@
                             </div>
 
                         </div>
-                        
-                        
-                    </div>
 
-                    <div class="swiper h-96">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                          <!-- Slides -->
+                        <div class="swiper mySwiper hidden lg:block top-5 w-full h-100%"><!-- slider-->
+                            <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="card m-12">
+                                <div class="card">
                                     <img src="./images/bed_1.jpg" alt="bed_1" class="w-full h-48 sm:h-96 object-cover">
                                     <div class="m-4">
                                         <span class="font-bold">Premium Suite</span>
@@ -125,40 +123,36 @@
                                     </div>
                                 </div>
                             </div>
-                    
-                          <div class="swiper-slide">
-                            <div class="card m-12">
-                                <img src="./images/bed_2.jpg" alt="bed_2" class="w-full h-48 sm:h-96 object-cover">
-                                <div class="m-4">
-                                    <span class="font-bold">Super Deluxe Suite</span>
-                                    <span class="block text-stone-500 text-sm">1000Sft.</span>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="./images/bed_2.jpg" alt="bed_2" class="w-full h-48 sm:h-96 object-cover">
+                                    <div class="m-4">
+                                        <span class="font-bold">Super Deluxe Suite</span>
+                                        <span class="block text-stone-500 text-sm">1000Sft.</span>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="card m-12">
-                                <img src="./images/bed_3.jpg" alt="bed_3" class="w-full h-48 sm:h-96 object-cover">
-                                <div class="m-4">
-                                    <span class="font-bold">Super Deluxe Suite</span>
-                                    <span class="block text-stone-500 text-sm">1000Sft.</span>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="./images/bed_3.jpg" alt="bed_3" class="w-full h-48 sm:h-96 object-cover">
+                                    <div class="m-4">
+                                        <span class="font-bold">Super Deluxe Suite</span>
+                                        <span class="block text-stone-500 text-sm">1000Sft.</span>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                          ...
+                            </div>
+                            <div>
+                                <div class="swiper-button-next bg-blur-20"></div>
+                                <div class="swiper-button-prev bg-blur-20"></div>  
+                            </div>
                         </div>
-                        <!-- If we need pagination -->
-                        <!-- <div class="swiper-pagination"></div> -->
-                      
-                        <!-- If we need navigation buttons -->
-                        <!-- <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div> -->
-                      
-                        <!-- If we need scrollbar -->
-                        <!-- <div class="swiper-scrollbar"></div> -->
-                      </div>
+                        
+
+                    </div>
 
                     <div id="services"><!-- Services-->
-                        <h3 class="font-bold mt-4 pb-2 border-b border-stone-400">Grandeur<span>Services</span></h3>
+                        <h3 class="font-bold mt-12 pb-2 border-b border-stone-400 relative text-white"><span class="text-2xl">Grandeur</span><span class="absolute top-3 left-8 text-black">Services</span></h3>
                         <div class="my-4">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate expedita quis tenetur possimus iusto harum totam nostrum natus ad error, dolores eos! Eveniet neque et alias, deleniti sequi iste modi.
                         </div>
@@ -194,8 +188,17 @@
 
                     <div id="contacts"><!-- Contacts-->
                         <h3 class="font-bold mt-12 pb-2 border-b border-stone-400">Contacts</span></h3>
-                        <div class="my-4">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate expedita quis tenetur possimus iusto harum totam nostrum natus ad error, dolores eos! Eveniet neque et alias, deleniti sequi iste modi.
+                        <div class="lg:grid grid-cols-2 items-center gap-10 lg:mb-36">
+                            <div class="w-full h-80 ml-6 my-6 hidden lg:block">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.037721051479!2d91.97669405041692!3d21.427762285713836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adc980ccfa36bf%3A0x8134b12993939988!2sHotel%20Sand%20City!5e0!3m2!1sen!2sbd!4v1644127538125!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                            
+                            <div class="my-6">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate expedita quis tenetur possimus iusto harum totam nostrum natus ad error, dolores eos! Eveniet neque et alias, deleniti sequi iste modi.
+                            </div>
+                            <div class="w-full h-80 ml-6 my-4 lg:hidden">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.037721051479!2d91.97669405041692!3d21.427762285713836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adc980ccfa36bf%3A0x8134b12993939988!2sHotel%20Sand%20City!5e0!3m2!1sen!2sbd!4v1644127538125!5m2!1sen!2sbd" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
                         </div>
                     </div>
                 </div> 
