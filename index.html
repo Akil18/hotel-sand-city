@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Allura&family=Lobster&family=Kaushan+Script&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
 
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <style type="text/tailwindcss">
@@ -83,25 +83,33 @@
         <main class="mt-24 bg-gradient-to-r from-stone-100 to-white">
             
                 <header class="relative lg:grid lg:grid-cols-2 lg:mx-36">
-                    <h1 class="font-kaushan font-bold absolute top-10 md:top-16 w-full text-center text-4xl text-stone-50 backdrop-blur-xl md:text-9xl lg:static lg:bg-gradient-to-r from-stone-100 to-stone-700 lg:text-right lg:pr-12 lg:pl-12 lg:pt-6">Hotel Sand City</h1>
-                    <h2 class="font-allura absolute bottom-10 sm:bottom-36 w-full text-center text-xl text-stone-50 backdrop-blur-xl md:text-5xl md:bottom-20 lg:text-stone-50">Grandeur stay near the ocean</h2>
-                    <div>
-                        <img class="lg:h-7/8" src="./images/corridor.jpeg" alt="background">
-                    </div>
+                    <h1 class="font-kaushan font-bold absolute top-10 md:top-16 w-full text-center text-4xl text-stone-50 backdrop-blur-xl md:text-9xl lg:static lg:bg-gradient-to-r from-stone-100 to-stone-700 lg:text-right lg:pr-12 lg:pl-12 lg:pt-6">
+                        Hotel Sand City
+                    </h1>
+                    <h2 class="font-allura absolute bottom-10 sm:bottom-36 w-full text-center text-xl text-stone-50 backdrop-blur-xl md:text-5xl md:hidden md:bottom-20 lg:text-stone-50">
+                        Grandeur stay near the ocean
+                    </h2>
+                    <img class="lg:h-7/8 lg:w-7/8 lg:shadow-2xl" src="./images/corridor.jpeg" alt="background">
                 </header>
 
             <div class="mx-4">
 
                 <div class="md:mx-20">
                     <div id="about" class="md:mx-4"><!-- about-->
-                        <h3 class="font-kaushan text-center lg:text-left text-lg mt-12 pb-2 border-b border-stone-400">Welcome to Hotel Sand City</h3>
+                        <h3 class="font-kaushan text-center text-lg lg:text-3xl mt-12 pb-2 border-b border-stone-400 lg:border-0">
+                            Welcome to Hotel Sand City
+                        </h3>
                         <p class="my-4 text-center">
                             Hotel Sand City aims to meet the desires of tourists visiting their most favourite destination, Cox's Bazar, and relishing a pleasurable stay near the ocean with accomodation catering to leisure or business-purposed visits.   
                         </p>
                     </div>
 
                     <div id="rooms"><!-- rooms-->
-                        <h3 class="font-allura text-center mt-12 border-b border-stone-400 relative text-white"><span class="text-6xl font-bold">Spectacular</span><span class="font-kaushan text-lg absolute top-16 left-36 lg:left-0 lg:top-16 text-black">Rooms</span></h3>
+                        <h3 class="font-allura text-center mt-12 border-b border-stone-400 lg:border-0 relative text-white">
+                            <span class="text-6xl font-bold lg:hidden">Spectacular</span>
+                            <br/>
+                            <span class="font-kaushan text-lg lg:text-3xl text-black">Rooms</span>
+                        </h3>
 
                         <div class="mt-8 lg:hidden grid lg:grid-cols-2 gap-10"><!-- cards-->
                             
@@ -171,7 +179,11 @@
                     </div>
 
                     <div id="services"><!-- Services-->
-                        <h3 class="font-allura text-center mt-12 pb-2 border-b border-stone-400 relative text-white"><span class="text-6xl font-bold">Grandeur</span><span class="font-kaushan text-lg absolute top-16 left-36 lg:left-0 lg:top-16 text-black">Services</span></h3>
+                        <h3 class="font-allura text-center mt-12 pb-2 border-b border-stone-400 lg:border-0 relative text-white">
+                            <span class="text-6xl font-bold lg:hidden">Grandeur</span>
+                            <br/>
+                            <span class="font-kaushan text-lg lg:text-3xl text-black">Services</span>
+                        </h3>
                         <!-- <div class="my-4">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate expedita quis tenetur possimus iusto harum totam nostrum natus ad error, dolores eos! Eveniet neque et alias, deleniti sequi iste modi.
                         </div> -->
@@ -206,7 +218,9 @@
                     </div>
 
                     <div id="contacts"><!-- Contacts-->
-                        <h3 class="font-kaushan text-center lg:text-left text-lg mt-12 pb-2 border-b border-stone-400">Contacts</span></h3>
+                        <h3 class="font-kaushan text-center text-lg lg:text-3xl mt-12 pb-2 border-b border-stone-400 lg:border-0">
+                            Contacts
+                        </h3>
                         <div class="lg:grid grid-cols-2 items-center gap-10 lg:mb-36 lg:mx-4">
                             <div class="w-full h-80 my-6 hidden lg:block">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.037721051479!2d91.97669405041692!3d21.427762285713836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adc980ccfa36bf%3A0x8134b12993939988!2sHotel%20Sand%20City!5e0!3m2!1sen!2sbd!4v1644127538125!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
